@@ -27,3 +27,10 @@
 *.exe
 *.out
 *.app
+*.suo
+*.ipch
+*.txt
+*.filters
+*.opensdf
+*.sdf
+
