@@ -33,4 +33,6 @@
 *.filters
 *.opensdf
 *.sdf
+Debug
+Release
 
