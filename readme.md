@@ -1,0 +1,16 @@
+- visitor
+- interpret
+- flyweight
+- bridge
+- command
+- singleton
+- iterator
+- memento
+- adapter
+- abstract factory
+- builder
+- facade
+- model methods
+- simple factory
+- decorator
+- strategy
