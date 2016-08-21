@@ -5,6 +5,7 @@
 #include <Windows.h>
 #include <vector>
 #include <string>
+#include <map>
 using namespace  std;
 
 // 享元模式（Flyweight）。运用共享技术有效地支持大量细粒度的对象。
@@ -26,6 +27,7 @@ public:
 
   }
   virtual void PrintInfo() { ; }
+  virtual std::string GetName() { return m_strName; }
 protected:
   string m_strName;
 };
@@ -70,37 +72,35 @@ public:
 class TreeModel
 {
 public:
-  TreeModel(int id, const string & str_mesh_name)
-    : m_pInfo(nullptr)
+  TreeModel(const string & name)
   {
-    m_pMesh = new Mesh(str_mesh_name);
-  }
-  ~TreeModel()
-  {
-    //only need to  delete pos info
-  }
-  void CreateNewInstacne(POSInfo *pInfo)
-  {
-    m_pInfo = pInfo;
+    m_pMesh = new Mesh(name);
   }
 
-  void PrintInfo()
+  ~TreeModel()
+  {
+    if (m_pMesh)
+    {
+      delete m_pMesh;
+      m_pMesh = nullptr;
+    }
+  }
+
+  void Draw(POSInfo *pInfo)
   {
     printf("\n.........\n");
     m_pMesh->PrintInfo();
-    printf("Tree mode id is %d", id);
 
-    if (m_pInfo)
+    if (pInfo)
     {
-      printf(" : \ndetail information :\nx:%lf, y:%lf, z:%lf", m_pInfo->m_x, m_pInfo->m_y, m_pInfo->m_z);
+      printf(" : \nWe will draw it at :\n(x:%lf, y:%lf, z:%lf)", pInfo->m_x, pInfo->m_y, pInfo->m_z);
     }
-    printf("\n.........\n");
 
+    printf("\n.........\n");
   }
+
 protected:
   Mesh* m_pMesh;
-  int	id;
-  POSInfo	  *m_pInfo;
 };
 
 class TreeModelFactory
@@ -108,31 +108,36 @@ class TreeModelFactory
 public:
   TreeModelFactory()
   {
-    TreeModel *pTM1 = new TreeModel(0, "大树");
-    TreeModel *pTM2 = new TreeModel(1, "小树");
-    TreeModel *pTM3 = new TreeModel(2, "小小树");
-    m_TreeModelVec.push_back(pTM1);
-    m_TreeModelVec.push_back(pTM2);
-    m_TreeModelVec.push_back(pTM3);
+    std::vector<std::string> name_array = { "大树", "小树", "小小树" };
+    for (std::vector<std::string>::iterator iter = name_array.begin(); iter != name_array.end(); iter++)
+    {
+      m_TreeModelInstances[*iter] = new TreeModel(*iter);
+    }
   }
 
-  TreeModel* GetTreeInstance(int num)
+  TreeModel* GetTreeInstance(std::string name)
   {
-    if (num >= 0 && num <= 2)
+    std::map<std::string, TreeModel*>::iterator finder;
+    finder = m_TreeModelInstances.find(name);
+    if(finder != m_TreeModelInstances.end())
     {
-      return m_TreeModelVec[num];
+      return finder->second;
     }
-    return NULL;
-  }
+    else
+    {
+      m_TreeModelInstances[name] = new TreeModel(name);
+    }
+ }
   ~TreeModelFactory()
   {
     // .......
     // delete tree
     // delete mesh
     // delete ro
+    // releas map
   }
 private:
-  vector<TreeModel*> m_TreeModelVec;
+  std::map<std::string, TreeModel*> m_TreeModelInstances;
 };
 
 
@@ -140,19 +145,14 @@ int _tmain(int argc, _TCHAR* argv[])
 {
   TreeModelFactory *pTreeFactory = new TreeModelFactory();
 
-  TreeModel* pT1 = pTreeFactory->GetTreeInstance(0);
-  pT1->CreateNewInstacne(new POSInfo(1, 2, 3, 0, 0, 0, 1, 2, 3));
-  pT1->PrintInfo();
+  TreeModel* pT1 = pTreeFactory->GetTreeInstance("大树");
+  pT1->Draw(new POSInfo(1, 2, 3, 0, 0, 0, 1, 2, 3));
 
-  TreeModel *pT2 = pTreeFactory->GetTreeInstance(2);
-  pT2->CreateNewInstacne(new POSInfo(6, 2, 3, 7, 0, 0, 1, 2, 3));
-  pT2->PrintInfo();
+  TreeModel *pT2 = pTreeFactory->GetTreeInstance("小树");
+  pT2->Draw(new POSInfo(6, 2, 3, 7, 0, 0, 1, 2, 3));
 
-  TreeModel *pT3 = pTreeFactory->GetTreeInstance(2);
-  pT3->CreateNewInstacne(new POSInfo(10, 12, 30, 7, 0, 0, 1, 2, 3));
-  pT3->PrintInfo();
-
-  pT2->PrintInfo();
+  pT2->Draw(new POSInfo(10, 12, 30, 7, 0, 0, 1, 2, 3));
+  pT1->Draw(new POSInfo(10, 12, 30, 7, 0, 0, 1, 2, 3));
 
 
 
