@@ -14,6 +14,7 @@
     <ProjectGuid>{91FC58B8-96B3-4BA8-8755-5093A1282A98}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>TemplateMethed</RootNamespace>
+    <ProjectName>TemplateMethod</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
