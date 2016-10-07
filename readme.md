@@ -1,29 +1,29 @@
 
-Refer to iuhsihsow µÄ[Éè¼ÆÄ£Ê½×¨À¸](http://blog.csdn.net/column/details/baadf00df00dabadfds0.html)
+Refer to iuhsihsow çš„[è®¾è®¡æ¨¡å¼ä¸“æ ](http://blog.csdn.net/column/details/baadf00df00dabadfds0.html)
 
 
 
 
-- [ ] Singleton					µ¥¼ş
-- [ ] Abstract Factory			³éÏó¹¤³§Ä£Ê½
-- [ ] Builder					Éú³ÉÆ÷Ä£Ê½
-- [ ] Factory Method			¹¤³§·½·¨Ä£Ê½
-- [ ] Prototype					Ô­ĞÍÄ£Ê½
-- [ ] Adapter					ÊÊÅäÆ÷Ä£Ê½
-- [ ] Bridge					ÇÅ½ÓÄ£Ê½
-- [ ] Composite					×éºÏÄ£Ê½
-- [ ] Decorator					×°ÊÎÄ£Ê½
-- [ ] Facade					Íâ¹ÛÄ£Ê½
-- [ ] Flyweight					ÏíÔªÄ£Ê½
-- [ ] Proxy						´úÀíÄ£Ê½
-- [ ] Template Methed			Ä£°å·½·¨
-- [ ] Command					ÃüÁîÄ£Ê½
-- [ ] Interpreter				½âÊÍÆ÷Ä£Ê½
-- [ ] Mediator					ÖĞ½éÕßÄ£Ê½
-- [ ] Iterator					µü´úÆ÷Ä£Ê½
-- [ ] Observer					¹Û²ìÕßÄ£Ê½
-- [ ] Chain Of Responsibility	Ö°ÔğÁ´Ä£Ê½
-- [ ] Memento					±¸ÍüÂ¼Ä£Ê½
-- [ ] State						×´Ì¬Ä£Ê½
-- [ ] Strategy					²ßÂÔÄ£Ê½
-- [ ] Visitor					·ÃÎÊÕßÄ£Ê½
+- [ ] Singleton					å•ä»¶
+- [ ] Abstract Factory			æŠ½è±¡å·¥å‚æ¨¡å¼
+- [ ] Builder					ç”Ÿæˆå™¨æ¨¡å¼
+- [ ] Factory Method			å·¥å‚æ–¹æ³•æ¨¡å¼
+- [ ] Prototype					åŸå‹æ¨¡å¼
+- [ ] Adapter					é€‚é…å™¨æ¨¡å¼
+- [ ] Bridge					æ¡¥æ¥æ¨¡å¼
+- [ ] Composite					ç»„åˆæ¨¡å¼
+- [ ] Decorator					è£…é¥°æ¨¡å¼
+- [ ] Facade					å¤–è§‚æ¨¡å¼
+- [ ] Flyweight					äº«å…ƒæ¨¡å¼
+- [ ] Proxy						ä»£ç†æ¨¡å¼
+- [ ] Template Method			æ¨¡æ¿æ–¹æ³•
+- [ ] Command					å‘½ä»¤æ¨¡å¼
+- [ ] Interpreter				è§£é‡Šå™¨æ¨¡å¼
+- [ ] Mediator					ä¸­ä»‹è€…æ¨¡å¼
+- [ ] Iterator					è¿­ä»£å™¨æ¨¡å¼
+- [ ] Observer					è§‚å¯Ÿè€…æ¨¡å¼
+- [ ] Chain Of Responsibility	èŒè´£é“¾æ¨¡å¼
+- [ ] Memento					å¤‡å¿˜å½•æ¨¡å¼
+- [ ] State						çŠ¶æ€æ¨¡å¼
+- [ ] Strategy					ç­–ç•¥æ¨¡å¼
+- [ ] Visitor					è®¿é—®è€…æ¨¡å¼
