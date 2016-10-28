@@ -36,6 +36,8 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 
 - [x] Simple factory  简单类工厂
 
+- [x] Singleton					单件
+
 - [x] Template Method			模板方法
 
 - [x] Visitor					访问者模式
@@ -43,7 +45,7 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 - [x] Proxy						代理模式
 
 ______
-- [ ] Singleton					单件
+
 - [ ] Factory Method			工厂方法模式
 - [ ] Mediator					中介者模式
 - [ ] Iterator					迭代器模式
