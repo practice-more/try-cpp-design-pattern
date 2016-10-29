@@ -14,6 +14,8 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 
 - [x] Builder					生成器模式
 
+- [x] Chain Of Responsibility	职责链模式
+
 - [x] Command					命令模式
 
 - [x] Composite					组合模式
@@ -49,7 +51,6 @@ ______
 - [ ] Factory Method			工厂方法模式
 - [ ] Mediator					中介者模式
 - [ ] Iterator					迭代器模式
-- [ ] Chain Of Responsibility	职责链模式
 - [ ] State						状态模式
 
 
