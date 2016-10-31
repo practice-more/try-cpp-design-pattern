@@ -73,10 +73,6 @@ void NoonState::write_programe(std::shared_ptr<Work> w)
 }
 
 
-
-
-
-
 int _tmain(int argc, _TCHAR* argv[])
 {
   std::shared_ptr<Work> sp_work = std::make_shared<Work>();
