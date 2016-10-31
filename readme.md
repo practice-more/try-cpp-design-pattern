@@ -28,6 +28,8 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 
 - [x] Interpreter				解释器模式
 
+- [x] Iterator					迭代器模式
+
 - [x] Memento					备忘录模式
 
 - [x] Observer					观察者模式
@@ -52,7 +54,7 @@ ______
 
 - [ ] Factory Method			工厂方法模式
 - [ ] Mediator					中介者模式
-- [ ] Iterator					迭代器模式
+
 
 
 
