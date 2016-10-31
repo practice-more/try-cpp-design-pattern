@@ -34,6 +34,8 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 
 - [x] Prototype					原型模式
 
+- [x] State						状态模式
+
 - [x] Strategy					策略模式
 
 - [x] Simple factory  简单类工厂
@@ -51,6 +53,6 @@ ______
 - [ ] Factory Method			工厂方法模式
 - [ ] Mediator					中介者模式
 - [ ] Iterator					迭代器模式
-- [ ] State						状态模式
+
 
 
