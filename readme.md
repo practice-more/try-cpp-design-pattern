@@ -30,7 +30,10 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 
 - [x] Iterator					迭代器模式
 
+- [x] Mediator					中介者模式
+
 - [x] Memento					备忘录模式
+
 
 - [x] Observer					观察者模式
 
@@ -53,7 +56,7 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 ______
 
 - [ ] Factory Method			工厂方法模式
-- [ ] Mediator					中介者模式
+
 
 
 
