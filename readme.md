@@ -2,7 +2,7 @@
 Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/baadf00df00dabadfds0.html)
 
 
-
+already finish all of the examples in c++
 
 
 
@@ -23,6 +23,7 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 - [x] Decorator					装饰模式
 
 - [x] Facade					外观模式
+- [x] Factory Method			工厂方法模式
 
 - [x] Flyweight					享元模式
 
@@ -30,7 +31,10 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 
 - [x] Iterator					迭代器模式
 
+- [x] Mediator					中介者模式
+
 - [x] Memento					备忘录模式
+
 
 - [x] Observer					观察者模式
 
@@ -50,10 +54,10 @@ Refer to iuhsihsow 的[设计模式专栏](http://blog.csdn.net/column/details/b
 
 - [x] Proxy						代理模式
 
-______
 
-- [ ] Factory Method			工厂方法模式
-- [ ] Mediator					中介者模式
+
+
+
 
 
 
